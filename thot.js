@@ -1,9 +1,9 @@
 G.AddData({
-    Name:'Thot Mod',
-    Author:'fancy and torcado',
+    name:'Thot Mod',
+    author:'fancy and torcado',
     desc:'This mod makes it possible to create thots. Thots are an improved version of Dreamers.',
     engineVersion:1,
-    manifest:'https://rawgit.com/Generatoror/hello-world/master/catManifest.js',
+    manifest:0,
     requires:['Default dataset*'],
     sheets:{'thotSheet':'/thotModIconSheet.png'},//custom stylesheet (note : broken in IE and Edge for the time being)
     func:function()
@@ -21,7 +21,7 @@ G.AddData({
 		],
 		category:'discovery',
 		req:{'construction':true},
-		limitPer:{'house':1},
+		limitPer:{'population':400},//I changed from House to population to make your mod working. If you wish to have still house DM me on Dashnet Discord or somewhere I will tell you how you can do that.
 		});
     }
 });
